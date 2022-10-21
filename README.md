@@ -1,4 +1,4 @@
-# vue-crm
+# vue2-budget_calc
 
 ## Project setup
 ```
