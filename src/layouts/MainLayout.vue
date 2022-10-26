@@ -41,7 +41,3 @@ export default {
     components: { NavbarComp, SidebarComp, LoaderItem }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
