@@ -27,6 +27,7 @@ Vue.component('LoaderItem', Loader)
 firebase.initializeApp({
   apiKey: "AIzaSyC48uzlwIav0-bc8_5e2DL1AwH-l8o6yCg",
   authDomain: "vue-crm-9a77f.firebaseapp.com",
+  databaseURL: "https://vue-crm-9a77f-default-rtdb.firebaseio.com",
   projectId: "vue-crm-9a77f",
   storageBucket: "vue-crm-9a77f.appspot.com",
   messagingSenderId: "442969164951",

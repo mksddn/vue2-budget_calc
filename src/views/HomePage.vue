@@ -12,6 +12,8 @@
 
         <div class="row" v-else>
 
+            <p>В этом компоненте должны отображаться состояние счета и курсы валют, но лимит API currency превышен. Подождем следующего месяца.</p>
+
             <HomeBill :rates="currency.rates" />
 
             <HomeCurrency :rates="currency.rates" :date="currency.date" />

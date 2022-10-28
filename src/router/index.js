@@ -55,8 +55,8 @@ const routes = [
     component: () => import('@/views/HistoryPage.vue'),
   },
   {
-    path: '/record-detail',
-    name: 'record-detail',
+    path: '/detail/:id',
+    name: 'detail',
     meta: { layout: 'main', auth: true },
     component: () => import('@/views/DetailRecordPage.vue'),
   }
