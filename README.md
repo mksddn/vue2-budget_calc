@@ -1,24 +1,16 @@
-# vue2-budget_calc
+## Развернутый проект [здесь](https://mrmadu.github.io/vue2-budget_calc/)
 
-## Project setup
-```
-npm install
-```
+![preview](https://user-images.githubusercontent.com/22976310/192249955-0f42db51-6f8c-46d6-8802-68d804ca54ca.gif)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Калькулятор бюджета на VUE 2
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- База данных (и авторизация) на `Firebase`
+- Стейт менеджер `Vuex`
+- `Vue router` для навигации по `PWA`
+- CSS фронтенд фреймворк `Materialize.css`
+- Кастомные `лэйауты` (для авторизации), `директивы` (для тултипов), `фильтры` (для валют и дат), `плагины` (для попап уведомлений) и `миксины` (для пагинации)
+- Получение курса валют по `API`
+- Визуализация данных с использованием `chart.js`
+- `Vuejs-paginate` и `Lodash` для пагинации
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+> [https://mrmadu.github.io/vue2-budget_calc/](https://mrmadu.github.io/vue2-budget_calc/)
