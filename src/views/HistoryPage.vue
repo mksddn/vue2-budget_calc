@@ -12,7 +12,7 @@
 
         <p class="center" v-else-if="!records.length">
             Записей пока нет.
-            <router-link to="/record">Добавить первую запись</router-link>
+            <router-link :to="{path: 'record'}">Добавить первую запись</router-link>
         </p>
 
         <section v-else>

@@ -62,7 +62,7 @@
 
             <p class="center">
                 Уже есть аккаунт?
-                <router-link to="/login">Войти!</router-link>
+                <router-link :to="{path: 'login'}">Войти!</router-link>
             </p>
         </div>
     </form>

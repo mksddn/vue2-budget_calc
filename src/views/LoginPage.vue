@@ -32,7 +32,7 @@
 
             <p class="center">
                 Нет аккаунта?
-                <router-link to="/register">Зарегистрироваться</router-link>
+                <router-link :to="{path: 'register'}">Зарегистрироваться</router-link>
             </p>
         </div>
     </form>

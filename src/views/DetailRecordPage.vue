@@ -3,7 +3,7 @@
         <LoaderItem v-if="loading" />
         <div v-else-if="record">
             <div class="breadcrumb-wrap">
-                <router-link to="/history" class="breadcrumb">История</router-link>
+                <router-link :to="{path: 'history'}" class="breadcrumb">История</router-link>
                 <a @click.prevent class="breadcrumb">
                     {{ record.typeText }}
                 </a>
