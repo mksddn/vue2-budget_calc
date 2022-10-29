@@ -16,7 +16,9 @@
         </p>
 
         <section v-else>
-            <HistoryTable :records="records" />
+            <HistoryTable :records="items" />
+            <vuejsPaginate v-model="page" :page-count="pageCount" :click-handler="pageChangeHandler" :prev-text="'Назад'" :next-text="'Вперед'"
+                :container-class="'pagination'" :page-class="'waves-effect'" />
         </section>
 
     </div>
@@ -24,28 +26,30 @@
 
 <script>
 import HistoryTable from '@/components/HistoryTable'
+import paginateMixin from '@/mixins/paginate.mixin'
 
 export default {
+    mixins: [paginateMixin],
     data: () => ({
         loading: true,
-        records: [],
-        categories: []
+        records: []
     }),
     async mounted() {
-        const records = await this.$store.dispatch('fetchRecords')
-        this.categoires = await this.$store.dispatch('fetchCategories')
-        this.records = records.map(record => {
+        this.records = await this.$store.dispatch('fetchRecords')
+        const categoires = await this.$store.dispatch('fetchCategories')
+
+        this.setPaginat(this.records.map(record => {
             return {
                 ...record,
-                categoryName: this.categoires.find(c => c.id === record.categoryId).title,
+                categoryName: categoires.find(c => c.id === record.categoryId).title,
                 typeClass: record.type === 'income' ? 'green' : 'red',
                 typeText: record.type === 'income' ? 'Доход' : 'Расход',
             }
-        })
+        }))
         this.loading = false
     },
     components: {
-        HistoryTable
+        HistoryTable,
     }
 }
 </script>
