@@ -5,7 +5,7 @@ import Home from '@/views/HomePage.vue'
 
 Vue.use(VueRouter)
 
-const ghpRepoName = ''
+const ghpRepoName = 'vue2-budget_calc'
 
 const routes = [
   {
