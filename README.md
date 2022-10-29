@@ -16,4 +16,5 @@
 - `Vuejs-paginate` и `Lodash` для пагинации
 - Динамическая локализация из `json` через фильтрацию
 
-> [https://mrmadu.github.io/vue2-budget_calc/](https://mrmadu.github.io/vue2-budget_calc/)
+### [Открыть в GitHub Pages](https://mrmadu.github.io/vue2-budget_calc/)
+## [Запустить в сэндбоксе](https://codesandbox.io/s/github/mrmadu/vue2-budget_calc)
