@@ -1,6 +1,8 @@
 ## Развернутый проект [здесь](https://mrmadu.github.io/vue2-budget_calc/)
 
-<!-- ![preview](https://user-images.githubusercontent.com/22976310/192249955-0f42db51-6f8c-46d6-8802-68d804ca54ca.gif) -->
+![preview](https://user-images.githubusercontent.com/22976310/198840626-87ab1aca-6bca-4084-abf1-95744b9ae5a8.gif)
+
+
 
 # Калькулятор бюджета на VUE 2
 
