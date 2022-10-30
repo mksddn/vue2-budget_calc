@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
 # Убедимся, что находимся на главной ветке и перебазируем ее в ветку gh-pages
-git checkout main
-git rebase gh-pages
+# git checkout main
+# git rebase gh-pages
 
 # переключаемся на ветку gh-pages
 git checkout gh-pages
