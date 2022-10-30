@@ -5,7 +5,7 @@ import Home from '@/views/HomePage.vue'
 
 Vue.use(VueRouter)
 
-const ghpRepoName = ''
+const ghpRepoName = 'vue2-budget_calc'
 
 const routes = [
   {
@@ -67,8 +67,7 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes,
-  // ghpRepoName
+  routes
 })
 
 router.beforeEach((to, from, next) => {
