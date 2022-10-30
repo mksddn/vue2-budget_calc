@@ -5,7 +5,15 @@
 # git rebase gh-pages
 
 # переключаемся на ветку gh-pages
-git checkout gh-pages
+# git checkout gh-pages
+
+git switch main
+git checkout --orphan temp_branch
+git add -A
+git commit -am "the first commit"
+git branch -D gh-pages
+git push origin --delete gh-pages
+git branch -m gh-pages
 
 # остановить публикацию при ошибках
 set -e
@@ -25,7 +33,8 @@ git commit -m 'add dist subtree and deploy'
 
 # если вы публикуете по адресу https://<USERNAME>.github.io/<REPO>
 git subtree push --prefix dist origin gh-pages
+# git push origin `git subtree split --prefix dist main`:gh-pages --force
 
-git checkout main
+git switch -f main
 
 # cd -
