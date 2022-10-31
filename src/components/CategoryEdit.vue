@@ -2,35 +2,35 @@
     <div class="col s12 m6">
         <div>
             <div class="page-subtitle">
-                <h4>Редактировать</h4>
+                <h4>{{'Edit'|localize}}</h4>
             </div>
             <div class="input-field">
                 <select ref="select" v-model="current">
                     <option v-for="c of categories" :key="c.id" :value="c.id">{{c.title}}</option>
                 </select>
-                <label>Выберите категорию</label>
+                <label>{{'SelectCategory'|localize}}</label>
             </div>
 
             <div class="input-field">
                 <input id="name" type="text" v-model="title" :class="{invalid: $v.title.$dirty && !$v.title.required}">
-                <label for="name">Название</label>
-                <span class="helper-text invalid" v-if="$v.title.$error">Введите название категории</span>
+                <label for="name">{{'Title'|localize}}</label>
+                <span class="helper-text invalid" v-if="$v.title.$error">{{'Message_CategoryTitle'|localize}}</span>
             </div>
 
             <div class="input-field">
                 <input id="limit" type="number" v-model.number="limit"
                     :class="{invalid: $v.limit.$dirty && !$v.limit.minValue || $v.limit.$dirty && !$v.limit.required}">
-                <label for="limit">Лимит</label>
-                <span class="helper-text invalid" v-if="$v.limit.$error">Минимальная величина:
+                <label for="limit">{{'Limit'|localize}}</label>
+                <span class="helper-text invalid" v-if="$v.limit.$error">{{'Message_MinLength'|localize}}
                     {{$v.limit.$params.minValue.min}}</span>
             </div>
 
             <button class="btn waves-effect waves-light" @click="update" style="margin-right: 10px;">
-                Обновить
+                {{'Update'|localize}}
                 <i class="material-icons right">send</i>
             </button>
             <button class="btn waves-effect red" @click="remove">
-                Удалить
+                {{'Delete'|localize}}
                 <i class="material-icons right">delete</i>
             </button>
         </div>
