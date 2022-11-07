@@ -2,6 +2,7 @@
   "ProfileTitle": "Профиль",
   "Message_EnterName": "Введите имя",
   "Update": "Обновить",
+  "Delete": "Удалить",
   "Create": "Создать",
   "Bill": "Счет",
   "Name": "Имя",
@@ -63,6 +64,6 @@
   "FirstLogin": "Для начала войдите в систему",
   "NoUserWithEmail": "Пользователя с таким email не существует",
   "WrongPassword": "Неверный пароль",
-  "EmailInUse": "Email уже занят",
+  "EmailInUse": "Такой email уже используется",
   "Error": "Ошибка"
 }

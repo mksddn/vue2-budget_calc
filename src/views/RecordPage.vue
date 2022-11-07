@@ -63,6 +63,11 @@ import {required, minValue} from 'vuelidate/lib/validators'
 import {mapGetters} from 'vuex'
 import M from 'materialize-css/dist/js/materialize'
 export default {
+  metaInfo() {
+        return {
+            title: this.$title('Menu_NewRecord')
+        }
+    },
   data: () => ({
     loading: true,
     select: null,

@@ -15,6 +15,7 @@
 - Визуализация данных с использованием `chart.js`
 - `Vuejs-paginate` и `Lodash` для пагинации
 - Динамическая локализация из `json` через фильтрацию
+- SEO с HTML Metadata менеджером `vue-meta`
 
 ### [Открыть в GitHub Pages](https://mrmadu.github.io/vue2-budget_calc/)
 ## [Запустить в сэндбоксе](https://codesandbox.io/s/github/mrmadu/vue2-budget_calc)

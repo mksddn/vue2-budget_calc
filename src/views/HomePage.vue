@@ -12,7 +12,7 @@
 
         <div class="row" v-else>
 
-            <p>В этом компоненте должны отображаться состояние счета и курсы валют, но лимит API currency превышен. Подождем следующего месяца.</p>
+            <!-- <p>В этом компоненте должны отображаться состояние счета и курсы валют, но лимит API currency превышен. Подождем следующего месяца.</p> -->
 
             <HomeBill :rates="currency.rates" />
 
@@ -27,6 +27,11 @@ import HomeBill from '@/components/HomeBill.vue';
 import HomeCurrency from '@/components/HomeCurrency.vue';
 import LoaderItem from '@/components/LoaderItem.vue';
 export default {
+    metaInfo() {
+        return {
+            title: this.$title('Bill')
+        }
+    },
     data: () => ({
         loading: true,
         currency: null

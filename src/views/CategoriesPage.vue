@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="page-title">
-      <h3>{{'Categories'|localize}}</h3>
+      <h3>{{'Menu_Categories'|localize}}</h3>
     </div>
     <section>
       <div class="row">
@@ -21,6 +21,11 @@
 import CategoryCreate from '@/components/CategoryCreate.vue';
 import CategoryEdit from '@/components/CategoryEdit.vue';
 export default {
+  metaInfo() {
+        return {
+            title: this.$title('Menu_Categories')
+        }
+    },
   data() {
     return {
       categories: [],
