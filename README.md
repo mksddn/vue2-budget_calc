@@ -1,10 +1,6 @@
-## Развернутый проект [здесь](https://mrmadu.github.io/vue2-budget_calc/)
+# Калькулятор бюджета на VUE 2
 
 ![preview](https://user-images.githubusercontent.com/22976310/198840626-87ab1aca-6bca-4084-abf1-95744b9ae5a8.gif)
-
-
-
-# Калькулятор бюджета на VUE 2
 
 - База данных (и авторизация) на `Firebase`
 - Стэйт менеджер `Vuex`
@@ -18,4 +14,29 @@
 - SEO с HTML Metadata менеджером `vue-meta`
 
 ### [Открыть в GitHub Pages](https://mrmadu.github.io/vue2-budget_calc/)
-## [Запустить в сэндбоксе](https://codesandbox.io/s/github/mrmadu/vue2-budget_calc)
+### [Запустить в сэндбоксе](https://codesandbox.io/s/github/mrmadu/vue2-budget_calc)
+
+------------------
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
