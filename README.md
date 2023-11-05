@@ -14,8 +14,8 @@
 - Динамическая локализация из `json` через фильтрацию
 - SEO с HTML Metadata менеджером `vue-meta`
 
-### [Открыть в GitHub Pages](https://mrmadu.github.io/vue2-budget_calc/)
-### [Запустить в сэндбоксе](https://codesandbox.io/s/github/mrmadu/vue2-budget_calc)
+### [Открыть в GitHub Pages](https://mksddn.github.io/vue2-budget_calc/)
+### [Запустить в сэндбоксе](https://codesandbox.io/s/github/mksddn/vue2-budget_calc)
 
 ------------------
 
